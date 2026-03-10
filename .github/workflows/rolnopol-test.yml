@@ -1,0 +1,27 @@
+name: Rolnopol Docker Image Test
+
+on:
+  # push:
+  #   branches: [ main, master ]
+  # pull_request:
+  #   branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+
+    services:
+      rolnopol:
+        image: jaktestowac/rolnopol:latest
+        ports:
+          - 3000:3000
+
+    steps:
+      - uses: actions/checkout@v5
+     
+      - name: Check Rolnopol status
+        run: |
+          curl http://localhost:3000/api/v1/about
+          curl http://localhost:3000/api/v1/healthcheck
