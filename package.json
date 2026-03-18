@@ -4,7 +4,12 @@
   "description": "This repository is used for tests. It is intended for storing test cases, scripts, and\r CI/automation experiments — not production code.",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "codegen":"npx playwright codegen",
+    "test:report": "npx playwright show-report",
+    "install:drivers": "npx playwright install"
   },
   "repository": {
     "type": "git",
