@@ -1,0 +1,25 @@
+{
+  "name": "toshi-repo",
+  "version": "1.0.0",
+  "description": "This repository is used for tests. It is intended for storing test cases, scripts, and\r CI/automation experiments — not production code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toshiqa/toshi-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/toshiqa/toshi-repo/issues"
+  },
+  "homepage": "https://github.com/toshiqa/toshi-repo#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.0"
+  }
+}
