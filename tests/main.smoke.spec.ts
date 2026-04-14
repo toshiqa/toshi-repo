@@ -1,5 +1,15 @@
 import { expect, test } from "@playwright/test";
 
+test("root page should load successfully and show core content @smoke @load", async ({
+  page,
+}) => {
+  await page.goto("");
+
+  const rootHeading = page.locator("h1");
+  await expect(rootHeading).toBeVisible();
+  await expect(rootHeading).not.toBeEmpty();
+});
+
 test("should display 'Rolnopol' in the page title @title @branding", async ({
   page,
 }) => {
