@@ -13,3 +13,5 @@ Example:
 feat(ui): add dark mode support
 
 When creating tests, use tags from #sym:## Test Plan and Tagging System and keep that reference updated.
+
+This repository uses the Playwright Test framework. Review `playwright.config.ts` for baseURL, timeouts, projects, and shared test configuration before adding or updating tests.
