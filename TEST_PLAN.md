@@ -28,6 +28,7 @@ Use end-to-end tests to confirm the app starts, renders main content, and matche
 
 ### 1. Smoke test: application loads successfully
 
+- Tags: `@smoke`, `@load`
 - Preconditions: application server running
 - Steps:
   1. Navigate to the application root URL.
@@ -36,6 +37,7 @@ Use end-to-end tests to confirm the app starts, renders main content, and matche
 
 ### 2. Page title validation
 
+- Tags: `@title`, `@branding`
 - Preconditions: application server running
 - Steps:
   1. Open the application root page.
@@ -44,6 +46,7 @@ Use end-to-end tests to confirm the app starts, renders main content, and matche
 
 ### 3. Documentation-guided feature check
 
+- Tags: `@docs`, `@feature`
 - Preconditions: documentation available at `http://localhost:3000/docs.html`
 - Steps:
   1. Open the docs page and review the main application features.
@@ -53,6 +56,7 @@ Use end-to-end tests to confirm the app starts, renders main content, and matche
 
 ### 4. Core UI content verification
 
+- Tags: `@content`, `@ui`
 - Preconditions: application server running
 - Steps:
   1. Load the main page.
